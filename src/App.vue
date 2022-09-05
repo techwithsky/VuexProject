@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <ToDoForm />
+    <ToDoList />
   </div>
 </template>
+
+<script>
+import ToDoForm from './components/todoform.vue';
+import ToDoList from './components/todolist.vue'
+export default {
+  name: 'App',
+  components: {
+    ToDoForm,
+    ToDoList
+  }
+}
+</script>
 
 <style>
 #app {
