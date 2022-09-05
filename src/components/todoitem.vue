@@ -1,6 +1,6 @@
 <template>
   <div class="deleteItem">
-    <span :class="{done : task.completed}" @click="toggleStatus">{{ task.title }}</span>
+    <span :class="{ done: task.completed }" @click="toggleStatus">{{ task.title }}</span>
     <span class="removeIcon" @click="deleteToDoItem()" style='font-size:26px;'>&#10006;</span>
   </div>
 
@@ -18,17 +18,17 @@ export default {
       this.$store.dispatch('toggleToDo', this.task)
       // this.completed = !this.completed
     }
-
   }
 }
 </script>
 
 <style scoped>
-.done{
+.done {
   text-decoration: line-through;
   /* color: rgb(255, 255, 255); */
 
 }
+
 .removeIcon {
   float: right;
   margin: -8px 17px 4px 0px;
