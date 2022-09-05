@@ -83,13 +83,14 @@ body {
 
 input {
     width: 30%;
-    height: 25px;
+    height: 26px;
     background-color: rgb(237 204 204);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     padding: 5px 0px 5px 15px;
     border: none;
+    outline: none;
     border-radius: 8px 0px 0px 8px;
 }
 

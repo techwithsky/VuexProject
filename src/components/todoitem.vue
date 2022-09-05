@@ -24,9 +24,7 @@ export default {
 
 <style scoped>
 .done {
-  text-decoration: line-through;
-  /* color: rgb(255, 255, 255); */
-
+  text-decoration: line-through double rgb(239, 239, 239);
 }
 
 .removeIcon {
