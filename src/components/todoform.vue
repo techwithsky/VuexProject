@@ -21,8 +21,7 @@ export default {
             if (this.newToDoItem == "") {
                 alert("Add task!!!")
             } else {
-
-                this.$store.dispatch('addNewToDo', this.newToDoItem);
+       this.$store.dispatch('addNewToDo', this.newToDoItem);
                 this.newToDoItem = '';
             }
         }
